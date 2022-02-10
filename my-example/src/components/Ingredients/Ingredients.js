@@ -38,7 +38,7 @@ const Ingredients = () => { //also can be written as: function Ingredients() {}
 
   const removeIngredientHandler = ingredientId => {
     setIsLoading(true)
-    fetch(`https://react-hooks-example-25888-default-rtdb.firebaseio.com/ingredients/${ingredientId}.jon`,
+    fetch(`https://react-hooks-example-25888-default-rtdb.firebaseio.com/ingredients/${ingredientId}.json`,
       {
         method: 'DELETE',
       }).then( response => {
